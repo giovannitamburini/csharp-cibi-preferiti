@@ -6,7 +6,7 @@ string[] favorite_foods = { "pizza", "hamburger", "cappelletti", "tagliatelle", 
 // stampo a video la lunghezza della classifica
 Console.WriteLine($"la lunghezza della mia classifica è {favorite_foods.Length}");
 
-Console.WriteLine(Environment.NewLine);
+Console.WriteLine();
 
 // stampo a video la mia classifica (dunque stampare l’intero array in ordine indicando la posizione in classifica)
 Console.WriteLine("La mia classifica è:");
@@ -16,17 +16,17 @@ for (int i = 0; i < favorite_foods.Length; i++)
     Console.WriteLine((i + 1) + " - " + favorite_foods[i]);
 }
 
-Console.WriteLine(Environment.NewLine);
+Console.WriteLine();
 
 // stampo a video il mio cibo top
 Console.WriteLine($"Il mio cibo top è: {favorite_foods[0]}");
 
-Console.WriteLine(Environment.NewLine);
+Console.WriteLine();
 
 // stampo a video il mio cibo preferito ma non troppo(ultima posizione in classifica)
 Console.WriteLine($"Il mio cibo preferito ma non troppo: {favorite_foods[^1]}");
 
-Console.WriteLine(Environment.NewLine);
+Console.WriteLine();
 
 // BONUS: stampo a schermo il cibo di mezza classifica
 // caso in cui la classifica presenta un numero di elementi pari
@@ -53,3 +53,5 @@ else
     Console.Write($"L'elemento mediano della classifica è: {favorite_foods[favorite_foods.Length / 2]}");
 
 }
+
+Console.WriteLine();
